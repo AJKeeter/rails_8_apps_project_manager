@@ -19,8 +19,8 @@
         <i class="fa fa-check"></i>
       <% end %>
     </div>
-    <div class="task">
-      <p <%= task.content %></p>
+    <div class="todo-item">
+      <p><%= task.content %></p>
     </div>
     <div class="trash">
       <%= link_to project_task_path(@project, task.id), method: :delete, data: { confirm: "Are you sure?" } do %>
